@@ -53,7 +53,7 @@
 <section class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable">
         <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"><div class="editable-style text-element silex-id-1706701007290-0 silex-component-hamburger prevent-resizable prevent-auto-z-index page-page-1 paged-element paged-element-visible"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1708978345121_25 closed">
+<div class="hamburger-menu_1709020305850_46 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -90,13 +90,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1708978345121_25').classList.remove('open');
-    document.querySelector('.hamburger-menu_1708978345121_25').classList.add('closed');
+    document.querySelector('.hamburger-menu_1709020305850_46').classList.remove('open');
+    document.querySelector('.hamburger-menu_1709020305850_46').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1708978345121_25').classList.add('open');
-    document.querySelector('.hamburger-menu_1708978345121_25').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1709020305850_46').classList.add('open');
+    document.querySelector('.hamburger-menu_1709020305850_46').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -106,7 +106,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1708978345121_25').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1709020305850_46').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -114,10 +114,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1708978345121_25 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1709020305850_46 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1708978345121_25 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1709020305850_46 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
