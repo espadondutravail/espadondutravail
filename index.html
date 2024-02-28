@@ -18,7 +18,12 @@
     
 
     
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5826691398879400" crossorigin="anonymous"></script><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+<script type="text/javascript">
+    aclib.runAutoTag({
+        zoneId: 's0tsnzps04',
+    });
+</script><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
 
 <body class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-current-page="page-page-1">
     
@@ -53,7 +58,7 @@
 <section class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable">
         <div class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width"><div class="editable-style text-element silex-id-1706701007290-0 silex-component-hamburger prevent-resizable prevent-auto-z-index page-page-1 paged-element paged-element-visible"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1709030078955_547 closed">
+<div class="hamburger-menu_1709107690729_641 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -90,13 +95,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1709030078955_547').classList.remove('open');
-    document.querySelector('.hamburger-menu_1709030078955_547').classList.add('closed');
+    document.querySelector('.hamburger-menu_1709107690729_641').classList.remove('open');
+    document.querySelector('.hamburger-menu_1709107690729_641').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1709030078955_547').classList.add('open');
-    document.querySelector('.hamburger-menu_1709030078955_547').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1709107690729_641').classList.add('open');
+    document.querySelector('.hamburger-menu_1709107690729_641').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -106,7 +111,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1709030078955_547').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1709107690729_641').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -114,10 +119,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1709030078955_547 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1709107690729_641 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1709030078955_547 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1709107690729_641 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
